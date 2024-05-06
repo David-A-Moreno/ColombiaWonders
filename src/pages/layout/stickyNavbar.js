@@ -41,7 +41,7 @@ export default function StickyNavbar() {
 	}
 
 	return (
-		<Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none lg:px-12 lg:py-3 bg-[#3667A6]">
+		<Navbar className="absolute top-0 left-0 right-0 z-10 max-w-full rounded-none px-2 py-2 lg:px-12 lg:py-3 bg-[#3667A6]">
 			<div className="flex items-center justify-between text-blue-gray-900 ">
 				<div className="flex items-center justify-between" onClick={() => navigate("/")}>
 					<img src={logoImage} alt="Logo" className="w-36 h-auto cursor-pointer" />

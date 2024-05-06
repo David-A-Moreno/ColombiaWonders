@@ -38,7 +38,11 @@ const SendImage = () => {
 	};
 
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen">
+		<div className="flex flex-col items-center justify-center h-screen">
+
+			<p className="z-10 w-[60rem] text-center mb-14 text-lg font-bold pt-[-2rem] text-black ">
+				¡Bienvenido a ColombiaWonders! Selecciona una ciudad y te brindaremos sus mejores lugares turisticos basandonos en la información de las páginas web TripAdvisor, Google y Minube
+			</p>
 			<div className="w-64">
 				<label htmlFor="city" className="block mb-2">Selecciona una ciudad:</label>
 				<select
@@ -48,7 +52,7 @@ const SendImage = () => {
 					onChange={handleCityChange}
 					className="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400"
 				>
-					<option value="">Selecciona una ciudad</option>
+					{!selectedCity && <option value="">Selecciona una ciudad</option>}
 					{cities.map((city, index) => (
 						<option key={index} value={city}>{city}</option>
 					))}
@@ -56,10 +60,12 @@ const SendImage = () => {
 			</div>
 			<button
 				onClick={handleSubmit}
-				className="mt-4 px-6 py-3 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-400"
+				disabled={!selectedCity}
+				className={`mt-4 px-6 py-3 rounded-md shadow focus:outline-none focus:ring ${selectedCity ? 'bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-400' : 'bg-gray-400 text-gray-700 cursor-not-allowed'}`}
 			>
 				Enviar
 			</button>
+
 		</div>
 	);
 };

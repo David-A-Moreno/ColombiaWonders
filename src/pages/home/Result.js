@@ -164,14 +164,14 @@ const TopPlaces = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-3xl font-bold mb-4">Top 3 Lugares</h1>
+    <div className="flex flex-col items-center justify-center h-screen mt-36">
+      <h1 className="text-3xl font-bold mb-12">Top 3 Lugares</h1>
       <div className="grid grid-cols-1 gap-4">
         {topPlaces.map((place, index) => (
           <div key={index} className="flex items-center">
             <img src={place.imageUrl} alt={place.name} className="mb-2 mr-12" />
             <div className="flex flex-col items-center">
-              <p className="text-lg font-semibold">{place.name}</p>
+              <p className="text-lg font-semibold">{index+1}.{place.name}</p>
               <p className="text-sm">Calificación promedio: {place.averageRating}</p>
                 <p className="text-sm">TripAdvisor: {place.tripadvisorRating} ({place.tripadvisorReviews})</p>
                 <p className="text-sm">Minube: {place.minubeRating} ({place.minubeReviews})</p>
