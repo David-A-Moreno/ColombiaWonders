@@ -1,0 +1,52 @@
+{
+	"calorías": {
+		"descripcion": "Bajo en calorías, 11 por 100 gramos.",
+		"recomendacion": "Es adecuado para una dieta baja en calorías y sin azúcares.",
+		"calificacion": 8
+	},
+	"proteínas": {
+		"descripcion": "Contiene 2.3 gramos de proteínas por cada 100 gramos.",
+		"recomendacion": "Buena fuente de proteínas para mantener la masa muscular con el ejercicio intenso diario.",
+		"calificacion": 7
+	},
+	"grasas": {
+		"descripcion": "Bajo contenido de grasas totales, solo 0.1 gramos por 100 gramos.",
+		"recomendacion": "Es adecuado para una dieta baja en grasas.",
+		"calificacion": 8
+	},
+	"colesterol": {
+		"descripcion": "No contiene colesterol.",
+		"recomendacion": "Adecuado para personas con hipertensión.",
+		"calificacion": 10
+	},
+	"sodio": {
+		"descripcion": "Contiene 41 mg de sodio por 100 gramos.",
+		"recomendacion": "Moderar su consumo para evitar el exceso de sodio en la dieta.",
+		"calificacion": 7
+	},
+	"carbohidratos": {
+		"descripcion": "Bajo en carbohidratos, 1.3 gramos por 100 gramos.",
+		"recomendacion": "Adecuado para personas que no desean consumir azúcares.",
+		"calificacion": 8
+	},
+	"azúcares": {
+		"descripcion": "Contiene solo 0.2 gramos de azúcares por 100 gramos.",
+		"recomendacion": "Ideal para personas con restricción de azúcares.",
+		"calificacion": 9
+	},
+	"fibra": {
+		"descripcion": "Contiene 0.5 gramos de fibra alimentaria por 100 gramos.",
+		"recomendacion": "Podría ser mayor la cantidad de fibra, se puede complementar con alimentos ricos en fibra.",
+		"calificacion": 6
+	},
+	"vitaminas": {
+		"descripcion": "Buena fuente de vitamina C, calcio y magnesio.",
+		"recomendacion": "Importante para mantener la salud del sistema inmunológico, los huesos y músculos.",
+		"calificacion": 8
+	},
+	"alimento_general": {
+		"consumiria": "Lo puedes consumir regularmente.",
+		"resumen": "Es un alimento bajo en calorías, grasas y azúcares, que aporta proteínas, vitaminas y minerales beneficiosos para tu dieta y estilo de vida.",
+		"calificacion_general": 5
+	}
+}
