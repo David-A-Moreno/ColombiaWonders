@@ -6,14 +6,8 @@ import Home from "./pages/home/Home";
 import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Register from "./pages/home/Register";
-import Login from "./pages/home/Login";
-import Leaderboard from "./pages/home/LeaderBoard";
-import MyAudioVisualaizer from "./pages/visualaizers/audio";
-import Results from "./pages/home/Results";
-import SendImage from "./pages/home/UploadImage";
+
 import TopPlaces from "./pages/home/Result";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,12 +17,6 @@ root.render(
 			<Routes>
 				<Route element={<Layout />}>
 					<Route path="/*" element={<Home />} />
-					<Route path="/register" element={<Register />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="/leaderboard" element={<Leaderboard />} />
-					<Route path="/audio" element={<MyAudioVisualaizer />} />
-					<Route path="/results" element={<Results />} />
-					<Route path="/image" element={<SendImage/>}/>
 					<Route path="/places" element={<TopPlaces/>}/>
 				</Route>
 			</Routes>
