@@ -5,7 +5,7 @@ import React from "react";
 import axios from "axios";
 import OpenAI from "openai";
 
-const citiesWithTildes = ["Cali", "Bogotá", "Medellín", "Barranquilla", "Cartagena"];
+const citiesWithTildes = ["Cali", "Medellín", "Barranquilla", "Cartagena"];
 
 // Crear un mapeo de ciudades con y sin tildes
 const citiesMapping = {
